@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Añadir Superhéroe</title>
+</head>
+<body>
+    <div class="encabezado"><p>Descuentos 20%</p></div>
+    
+    <header>
+        <img class="logo-estudio" src="./img/logo 1.svg" alt="Logo Estudio Uno">
+        <h1>Estudio Uno</h1>
+        <button class="hamb" type="button"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <nav class="nav-oscura" id="menu-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li> <!-- Agregué un link para volver -->
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección formulaio -->
+    <main class="seccion-formulario">
+        <div class="caja-formulario">
+            <h2>Añadí tu super!</h2>
+            <p class="modal-sub">Agregá tu personaje favorito completando las opciones.</p>
+            
+            <form action="#" method="POST" class="formulario-super">
+                <!-- Columna Izquierda -->
+                <div class="form-columna">
+                    <div class="campo">
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" id="nombre" placeholder="">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div class="campo">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" rows="8" placeholder=""></textarea>
+                    </div>
+                </div>
+                
+                <!-- Columna Derecha -->
+                <div class="form-columna">
+                    <div class="campo">
+                        <label for="especie">*Especie</label>
+                        <select id="especie">
+                            <option value="especie">Especie</option>
+                            <option value="unknown">Unknown</option>
+                            <option value="humano">Humano</option>
+                            <option value="alien">Superhéroe</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="foto">Agregar Foto</label>
+                        <input type="file" id="foto" class="input-file">
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Poderes</label>
+                        <div class="opciones-grupo">
+                            <label><input type="checkbox" name="poderes" value="volar"> Volar</label>
+                            <label><input type="checkbox" name="poderes" value="inteligencia"> SuperInteligencia</label>
+                            <label><input type="checkbox" name="poderes" value="laser"> Vista de rayo láser</label>
+                            <label><input type="checkbox" name="poderes" value="billetera"> Billetera gorda</label>
+                        </div>
+                    </div>
+                    
+                    <hr class="separador-form">
+                    
+                    <div class="campo">
+                        <label>Tipo de personaje</label>
+                        <div class="opciones-grupo">
+                            <label><input type="radio" name="tipo" value="heroe"> Héroe / Heroina</label>
+                            <label><input type="radio" name="tipo" value="villano"> Villano / Villana</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn-añadir">Añadir</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="pie-container">
+        <div class="pie"></div>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+        <div class="img-github">
+            <img src="./img/Vector.png" alt="Logo GitHub">
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
